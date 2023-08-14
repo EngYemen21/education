@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color:white;
+            letter-spacing: 1px;
+            /* font-family:monospace */
+        }
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 100vh;
+            background-color: rgb(51, 12, 88);
+           
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            align-items: center;
+            justify-content: center;
+            /* width: 100%; */
+
+        }
+
+        h1 {
+            text-align: center;
+            /* padding: 20px; */
+        }
+
+        h3 {
+          
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .input {
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            /* display: inline-block; */
+            margin-bottom: 20px;
+            width: 100%;
+            color:black
+        }
+
+        input[type=submit] {
+
+            width: 60%;
+            padding: 10px 20px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+           
+            color: black;;
+            font-size:1rem;
+            display: block;
+            margin:20px auto;
+           
+
+        }
+        .selects{
+            width: 40%;
+            padding: 10px 20px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            color: black;;
+            font-size:1rem;
+        }
+        select{
+            background-color: rgb(57, 55, 194);
+        }
+
+        input[type=submit]:hover {
+            background-color: blueviolet;
+        }
+
+        .myform{
+            width: 40%;
+        }
+        /* small  and large*/
+/* ملاحظة احذف العرض حق كونتينر الرئيسية */
+@media (max-width:780px){
+    .container{
+        /* width:750px; */
+    }
+    .myform{
+            width: 90%;
+        }
+}
+
+  
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>تسجيل دخول </h1>
+        </div>
+        <div>
+
+            <h3>سجل دخولك الان ! وإبدأ في التعليم حيث ما تكون</h3>
+        </div>
+
+        <form action="#" method="post" class="myform">
+            
+            <input class="input" type="text" placeholder="uaername" name="username" />
+                <input class="input" type="text" placeholder="enter email" name="email" />
+                <input class="input" type="password" placeholder="enter  password" name="password" />
+                <input class="input" type="password" placeholder="confirm your password" name="passConf" />
+                <select class="selects">
+                    <option selected value="yemen">اليمن</option>
+                    <option value="saudi">السعودية</option>
+                    <option value="chian">الصين</option>
+                    <option value="qatar">قطر</option>
+                    <option value="oman">عمان</option>
+
+                </select>
+ 
+
+
+        <input type="submit" name="submit" value="إرسال" />
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

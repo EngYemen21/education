@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color:white;
+            letter-spacing: 1px;
+            /* font-family:monospace */
+        }
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 100vh;
+            background-color: rgb(51, 12, 88);
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        h1 {
+            text-align: center;
+            /* padding: 20px; */
+        }
+
+        h3 {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .input {
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            display: inline-block;
+            margin-bottom: 20px;
+            width: 100%;
+            color:black
+        }
+
+        input[type=submit] {
+
+            width: 60%;
+            padding: 10px 20px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            margin: 0 auto;
+            color: black;;
+            font-size:1rem;
+            display: block;
+            margin:20px auto;
+           
+
+        }
+
+        input[type=submit]:hover {
+            background-color: blueviolet;
+        }
+        input[type=checkbox]{
+            margin-left: 15px;
+        }
+        .chechbox{
+
+            display: flex;
+            justify-content: space-between;
+            /* margin: -10px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>تسجيل دخول </h1>
+        </div>
+        <div>
+
+            <h3>سجل دخولك الان ! وإبدأ في التعليم حيث ما تكون</h3>
+        </div>
+
+        <form action="#" method="post" class="myform">
+            <input class="input" type="text" placeholder="enter your email" name="email" />
+            <input class="input" type="password" placeholder="enter your password" name="password" />
+            <div class="chechbox">
+                <div>
+                     <input  type="checkbox" value="" name="check" />تذكرني
+                </div>
+                <div>
+                    <a href="#" >نسيت كلمة المرور</a>
+               </div>
+               
+               
+            </div>
+           
+            <input type="submit" name="submit" value="إرسال" />
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
